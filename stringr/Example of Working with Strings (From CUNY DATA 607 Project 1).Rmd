@@ -1,10 +1,17 @@
 ---
-title: "DATA 607 Project 1"
+title: "Working with Strings Example"
 author: "Zach Dravis"
 date: "2/24/2018"
-output: html_document
+output: 
+  html_document:
+  toc: true
+  toc_float: true
+  toc_collapsed: true
+toc_depth: 3
+number_sections: true
+theme: lumen
 ---
-# DATA 607 Project 1
+# Based off of DATA 607 Project 1: Task
 For this project, I was given a text file with chess tournament results where the information has some structure (See https://github.com/zachdravis/CUNY-DATA-607/blob/master/Project%201/DATA%20607%20Project%201%20Data.txt).
 
 The task was to create an R Markdown file that generates a .CSV file with the following information for all of the players:
@@ -27,7 +34,7 @@ To download data please visit: https://github.com/zachdravis/CUNY-DATA-607/blob/
 ```{r}
 library(stringr)
 
-data <- read.csv("/Users/zachdravis/Documents/GitHub/CUNY-DATA-607/Project 1/DATA 607 Project 1 Data.txt")
+data <- read.csv("/Users/zachdravis/Documents/GitHub/R_Guides/stringr/DATA 607 Project 1 Data.txt")
 ```
 
 ## Clean Data
